@@ -9,7 +9,7 @@
 
 module.exports = (number) => {
   const newArray = [];
-  for (let i = 1; i <= number; i + 1) {
+  for (let i = 1; i <= number; i += 1) {
     newArray.push(i);
   }
   return newArray;
