@@ -1,5 +1,5 @@
 const assert = require('assert');
-const sum = require('./sum');
+const sum = require('../../tasks/sum');
 
 describe('simple tests', () => {
   it('should return 3', () => {

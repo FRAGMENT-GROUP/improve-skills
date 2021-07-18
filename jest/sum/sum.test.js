@@ -1,4 +1,4 @@
-const sum = require('./sum');
+const sum = require('../../tasks/sum/index');
 
 describe('simple tests', () => {
   it('should return 3', () => {
