@@ -1,0 +1,30 @@
+{
+  "name": "improve-skills",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "lint": "eslint .",
+    "test-jest": "jest",
+    "test-mocha": "mocha ./**/*.mocha.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FRAGMENT-GROUP/improve-skills.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FRAGMENT-GROUP/improve-skills/issues"
+  },
+  "homepage": "https://github.com/FRAGMENT-GROUP/improve-skills#readme",
+  "devDependencies": {
+    "assert": "^2.0.0",
+    "eslint": "^7.31.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.23.4",
+    "jest": "^27.0.6",
+    "mocha": "^9.0.2"
+  }
+}
