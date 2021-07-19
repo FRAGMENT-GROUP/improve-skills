@@ -1,5 +1,6 @@
 const lengthSupUK = require('../../tasks/fibo-akin/fiboAkin');
 const comp = require('../../tasks/fibo-akin/fiboAkin');
+
 describe('Simple tests for task:Fibo akin, function: lengthSupUk', () => {
   test('should return 6', () => {
     assert.strictEqual(lengthSupUK(50, 25), 6);
@@ -14,6 +15,7 @@ describe('Simple tests for task:Fibo akin, function: lengthSupUk', () => {
     assert.notStrictEqual(lengthSupUK(3177, 573), 2048);
   });
 });
+
 describe('Simple tests for task:Fibo akin, function: comp', () => {
   it('should return 37128', () => {
     assert.strictEqual(comp(74626), 37128);
