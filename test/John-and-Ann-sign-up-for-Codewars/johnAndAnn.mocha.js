@@ -11,10 +11,10 @@ describe('Simple tests for task: John and Ann sign up for Codewars', () => {
   it('should return 12', () => {
     assert.strictEqual(ann(6), 12);
   });
-  it('should return 4070', () => {
-    assert.strictEqual(sumJohn(115), 4070);
-  });
   it('should return 1729', () => {
-    assert.strictEqual(sumAnn(75), 1729);
+    assert.strictEqual(sumJohn(75), 1729);
+  });
+  it('should return 6930', () => {
+    assert.strictEqual(sumAnn(150), 6930);
   });
 });
