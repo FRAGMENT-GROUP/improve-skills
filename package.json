@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "lint": "eslint .",
-    "test-jest": "jest",
+    "test-jest": "jest jest/0040-CW-Rainfall.jest.js",
     "test-mocha": "mocha ./**/*.mocha.js"
   },
   "repository": {

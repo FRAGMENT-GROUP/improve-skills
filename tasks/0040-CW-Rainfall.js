@@ -28,4 +28,4 @@ function variance(town, string) {
   }
   return -1;
 }
-variance('London', 'Random_string');
+module.exports = { mean, variance };
