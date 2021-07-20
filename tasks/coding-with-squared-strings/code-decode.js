@@ -1,21 +1,21 @@
 function code(s) {
-  const str = s.replace(/\n/g, '');
-  const len = str.length;
-  let res = '';
+  const string = s.replace(/\n/g, '');
+  const length = string.length;
+  let result = '';
 
-  const n = Math.ceil(Math.sqrt(len));
-  const m = n * (n - 1);
+  const change = Math.ceil(Math.sqrt(length));
+  const swap = change * (change - 1);
 
-  for (let i = 0; i < n; i += 1) {
-    res += '\n';
-    for (let j = 0; j < n; j += 1) { res += str[m + i - n * j] || '\v'; }
+  for (let i = 0; i < change; i += 1) {
+    result += '\n';
+    for (let j = 0; j < change; j += 1) { result += string[swap + i - change * j] || '\v'; }
   }
-  return res.slice(1);
+  return result.slice(1);
 }
 
 function decode(s) {
-  const res = code(code(code(s)));
-  return res.replace(/(\n|\v)/g, '');
+  const res = () => code(code(code(s))).replace(/(\n|\v)/g, '')
+  return res;
 }
 
 module.exports = code;
