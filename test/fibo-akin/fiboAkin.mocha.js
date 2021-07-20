@@ -1,32 +1,33 @@
-const lengthSupUK = require('../../tasks/fibo-akin/fiboAkin');
-const comp = require('../../tasks/fibo-akin/fiboAkin');
+const assert = require('assert');
+const numberOfTerms = require('../../tasks/fibo-akin/fiboAkin');
+const quantitySmallerNumbers = require('../../tasks/fibo-akin/fiboAkin');
 
-describe('Simple tests for task:Fibo akin, function: lengthSupUk', () => {
-  test('should return 6', () => {
-    assert.strictEqual(lengthSupUK(50, 25), 6);
+describe('Simple tests for task:Fibo akin, function: numberOfTerms', () => {
+  it('should return 6', () => {
+    assert.strictEqual(numberOfTerms(50, 25), 6);
   });
-  test('should return 1559', () => {
-    assert.strictEqual(lengthSupUK(3332, 973), 1559);
+  it('should return 1559', () => {
+    assert.strictEqual(numberOfTerms(3332, 973), 1559);
   });
-  test('shouldn`t return 1247', () => {
-    assert.notStrictEqual(lengthSupUK(3332, 973), 1247);
+  it('shouldn`t return 1247', () => {
+    assert.notStrictEqual(numberOfTerms(3332, 973), 1247);
   });
-  test('shouldn`t return 2048', () => {
-    assert.notStrictEqual(lengthSupUK(3177, 573), 2048);
+  it('shouldn`t return 2048', () => {
+    assert.notStrictEqual(numberOfTerms(3177, 573), 2048);
   });
 });
 
-describe('Simple tests for task:Fibo akin, function: comp', () => {
+describe('Simple tests for task:Fibo akin, function: quantitySmallerNumbers', () => {
   it('should return 37128', () => {
-    assert.strictEqual(comp(74626), 37128);
+    assert.strictEqual(quantitySmallerNumbers(74626), 37128);
   });
-  test('should return 35692', () => {
-    assert.strictEqual(comp(71749), 35692);
+  it('should return 35692', () => {
+    assert.strictEqual(quantitySmallerNumbers(71749), 35692);
   });
-  test('shouldn`t return 28282', () => {
-    assert.notStrictEqual(comp(56890), 28282);
+  it('shouldn`t return 28282', () => {
+    assert.notStrictEqual(quantitySmallerNumbers(56890), 28282);
   });
-  test('shouldn`t return 30055', () => {
-    assert.notStrictEqual(comp(60441), 30055);
+  it('shouldn`t return 30055', () => {
+    assert.notStrictEqual(quantitySmallerNumbers(60441), 30055);
   });
 });
