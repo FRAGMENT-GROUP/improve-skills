@@ -1,9 +1,9 @@
 function code(s) {
   const string = s.replace(/\n/g, '');
-  const length = string.length;
+  const size = string.length;
   let result = '';
 
-  const change = Math.ceil(Math.sqrt(length));
+  const change = Math.ceil(Math.sqrt(size));
   const swap = change * (change - 1);
 
   for (let i = 0; i < change; i += 1) {
