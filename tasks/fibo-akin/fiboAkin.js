@@ -1,23 +1,17 @@
-function getArray(n) {
+function getArray(number) {
   const arr = [1, 1];
-  while (arr.length < n) {
-    const i = arr.length;
-    const a = arr[i - arr[i - 1]];
-    const b = arr[i - arr[i - 2]];
-    arr.push(a + b);
+  while (arr.length < number) {
+    const firstDigit = arr.length;
+    const secondDigit = arr[firstDigit - arr[firstDigit - 1]];
+    const thirdDigit = arr[firstDigit - arr[firstDigit - 2]];
+    arr.push(secondDigit + thirdDigit);
   }
   return arr;
 }
 
-function lengthSupUK(n, k) {
-  const arr = getArray(n);
-  return arr.filter((v) => v >= k).length;
-}
+const numberOfTerms = (first, second) => getArray(first).filter((v) => v >= second).length;
 
-function comp(n) {
-  const arr = getArray(n);
-  return arr.filter((v, i, a) => v < a[i - 1]).length;
-}
+const quantitySmallerNumbers = (digit) => getArray(digit).filter((v, i, a) => v < a[i - 1]).length;
 
-module.exports = lengthSupUK;
-module.exports = comp;
+module.exports = numberOfTerms;
+module.exports = quantitySmallerNumbers;
