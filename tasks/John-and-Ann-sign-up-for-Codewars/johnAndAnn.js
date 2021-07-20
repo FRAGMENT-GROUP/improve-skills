@@ -4,7 +4,7 @@ function johnAndAnn(day) {
   let i = 1;
   while (i < day) {
     johnSum.push(i - annSum[johnSum[i - 1]]);
-    annSum.push(i - johnSum[annSum[(i += 1) - 1]]);
+    annSum.push(i - johnSum[annSum[i++ - 1]]);
   }
   return [johnSum, annSum];
 }
