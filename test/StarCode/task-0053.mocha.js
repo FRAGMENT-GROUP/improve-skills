@@ -12,6 +12,6 @@ describe('Simple tests for task:All Star Code Challenge #1, function: sumPPG', (
     assert.notStrictEqual(sumPPG({ ppg: 12 }, { ppg: 12 }), 25);
   });
   it('shouldn`t return 5', () => {
-    assert.notStrictEqual(sumPPG(({ ppg: 12 }, { ppg: 1 }), 5));
+    assert.notStrictEqual(sumPPG({ ppg: 12 }, { ppg: 1 }), 5);
   });
 });
