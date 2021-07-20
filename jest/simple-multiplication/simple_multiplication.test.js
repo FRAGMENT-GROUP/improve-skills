@@ -1,4 +1,4 @@
-const simpleMultiplication = require('./simple_multiplication');
+const simpleMultiplication = require('../../tasks/simple-multiplication/simple_multiplication');
 
 describe('#simpleMultiplication()', () => {
   it('Should return double given argument', () => {

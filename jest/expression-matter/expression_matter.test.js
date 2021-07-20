@@ -1,4 +1,4 @@
-const { expressionMatter } = require('./expression_matter');
+const { expressionMatter } = require('../../tasks/expression-matter/expression_matter');
 
 const smallValues = [
   { args: [2, 1, 2], expected: 6 },

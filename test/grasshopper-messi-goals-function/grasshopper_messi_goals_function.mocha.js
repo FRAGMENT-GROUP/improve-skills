@@ -1,6 +1,6 @@
 const assert = require('assert');
 
-const { goals } = require('./grasshopper_messi_goals_function');
+const { goals } = require('../../tasks/grasshopper-messi-goals-function/grasshopper_messi_goals_function');
 
 describe('#goals()', () => {
   it('Should return 0', () => {

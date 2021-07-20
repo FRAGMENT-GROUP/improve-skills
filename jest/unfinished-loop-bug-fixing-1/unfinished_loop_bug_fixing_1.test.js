@@ -1,4 +1,4 @@
-const createArray = require('./unfinished_loop_bug_fixing_1');
+const createArray = require('../../tasks/unfinished-loop-bug-fixing-1/unfinished_loop_bug_fixing_1');
 
 describe('#createArray()', () => {
   it('Should return array [1]', () => {
