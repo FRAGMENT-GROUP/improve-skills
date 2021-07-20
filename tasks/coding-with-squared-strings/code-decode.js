@@ -14,8 +14,8 @@ function code(s) {
 }
 
 function decode(s) {
-  const res = () => code(code(code(s))).replace(/(\n|\v)/g, '')
-  return res;
+  const res = code(code(code(s)));
+  return res.replace(/(\n|\v)/g, '');
 }
 
 module.exports = code;
