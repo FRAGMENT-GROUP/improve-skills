@@ -4,26 +4,19 @@ function johnAndAnn(day) {
   let i = 1;
   while (i < day) {
     johnSum.push(i - annSum[johnSum[i - 1]]);
+    // eslint-disable-next-line no-plusplus
     annSum.push(i - johnSum[annSum[i++ - 1]]);
   }
   return [johnSum, annSum];
 }
-function john(day) {
-  return johnAndAnn(day)[0];
-}
-function ann(day) {
-  return johnAndAnn(day)[1];
-}
+const john = (day) => johnAndAnn(day)[0];
+const ann = (day) => johnAndAnn(day)[1];
+const sumJohn = (day) => john(day).reduce((a, b) => a + b, 0);
+const sumAnn = (day) => ann(day).reduce((a, b) => a + b, 0);
 
-function sumJohn(day) {
-  return john(day).reduce((a, b) => a + b, 0);
-}
-
-function sumAnn(day) {
-  return ann(day).reduce((a, b) => a + b, 0);
-}
-
-module.exports = john;
-module.exports = ann;
-module.exports = sumJohn;
-module.exports = sumAnn;
+module.exports = {
+  john,
+  ann,
+  sumJohn,
+  sumAnn,
+};
